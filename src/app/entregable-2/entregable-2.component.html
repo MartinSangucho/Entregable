@@ -1,0 +1,35 @@
+<header class="header">
+  <h1>Entregable 2</h1>
+</header>
+<br>
+<br>
+<br>
+<div class="grid grid-nogutter p-4 gap-0">
+  <div *ngFor="let card of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3 p-3">
+    <p-card [style]="{ width: '100%', overflow: 'hidden' }">
+      <ng-template pTemplate="header">
+        <img alt="Card" class="w-full" src="https://images.pexels.com/photos/788334/pexels-photo-788334.jpeg" />
+      </ng-template>
+      <ng-template pTemplate="title"> Tarjeta {{ card }} </ng-template>
+      <ng-template pTemplate="subtitle"> Subtitulo </ng-template>
+      <p>
+        Aqui va la descripcion de la imagen o lo que se desee 
+      </p>
+      <ng-template pTemplate="footer">
+        <div class="flex gap-2 mt-1">
+          <p-button label="Cancelar" severity="secondary" [outlined]="true" class="w-full" />
+          <p-button label="Guardar" class="w-full" />
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
+</div>
+
+<div class="flex justify-content-center align-items" style="height: 50px;">
+  <button class="click" routerLink="/entregable">
+    <i class="pi pi-arrow-left"></i>
+  </button>
+  <button class="click" routerLink="/iconos">
+    <i class="pi pi-arrow-right"></i>
+  </button>
+</div>

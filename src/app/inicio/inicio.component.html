@@ -1,0 +1,107 @@
+<title>PrimeNG</title>
+  <link rel="stylesheet" href="https://unpkg.com/primeng/resources/themes/lara-light-blue/theme.css">
+  <link rel="stylesheet" href="https://unpkg.com/primeng/resources/primeng.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/primeflex/primeflex.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #000000;
+    }
+
+    header {
+      background-color: #20538e;
+      color: #f4f3f3;
+      padding: 5px;
+      text-align: center;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .grid {
+      margin-top: 20px;
+    }
+
+    .box {
+      background-color: #000000;
+      color: #fffdfd;
+      text-align: center;
+      border-radius: 8px;
+      padding: 20px;
+      font-weight: bold;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Fcolor-liso&psig=AOvVaw0wwxzkf_iPgl6XtVbxT-C6&ust=1734165199711000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjGxPqqpIoDFQAAAAAdAAAAABAE');
+    }
+
+    header h1 {
+    font-size: 2.5rem;
+    animation: glowEffect 3s ease-in-out infinite;
+    text-shadow: 0 0 5px #b0bec5, 0 0 10px #90a4ae, 0 0 20px #90a4ae, 
+                 0 0 30px #78909c, 0 0 40px #78909c, 0 0 50px #607d8b;
+  }
+
+  @keyframes glowEffect {
+    0%, 100% {
+      text-shadow: 0 0 5px #b0bec5, 0 0 10px #90a4ae, 0 0 20px #90a4ae, 
+                   0 0 30px #78909c, 0 0 40px #78909c, 0 0 50px #607d8b;
+    }
+    50% {
+      text-shadow: 0 0 5px #cfd8dc, 0 0 10px #b0bec5, 0 0 20px #90a4ae, 
+                   0 0 30px #78909c, 0 0 40px #607d8b, 0 0 50px #546e7a;
+    }
+  }
+  </style>
+<body>
+  <header>
+    <h1>PrimeNG</h1>
+  </header>
+  <div class="content">
+    <p>
+      Este proyecto utiliza <strong>PrimeNG</strong> y <strong>PrimeFlex</strong> para demostrar cómo sacar el máximo provecho de ambas tecnologías en la construcción de interfaces web efectivas y visualmente atractivas. La combinación de estas herramientas garantiza un desarrollo ágil y eficiente de aplicaciones modernas, optimizando tanto el diseño como la funcionalidad.
+    </p>
+    <br>
+    <br>
+    <br>
+
+    <div class="grid">
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 1</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 2</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 3</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 4</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 5</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 6</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 7</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 8</div>
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+  <div class="flex justify-content-center align-items" style="height: 50px;">
+    <button class="click" routerLink="/entregable">
+      <i class="pi pi-arrow-right"></i>
+    </button>
+  </div>
+</body>

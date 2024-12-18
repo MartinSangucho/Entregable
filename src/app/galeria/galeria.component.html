@@ -1,0 +1,39 @@
+<header class="header">
+    <h1>Galeria de Imagenes</h1>
+</header>
+<br><br><br><br>
+<div class="gallery-container">
+    <p-galleria 
+        [value]="images" 
+        [responsiveOptions]="responsiveOptions" 
+        [containerStyle]="{ 'max-width': '640px' }" 
+        [numVisible]="5">
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.itemImageSrc" class="gallery-image" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+            <div class="grid grid-nogutter justify-content-center thumbnail-container">
+                <img [src]="item.thumbnailImageSrc" class="thumbnail-image" />
+            </div>
+        </ng-template>
+    </p-galleria>
+</div>
+
+<br><br>
+
+<div class="p-image-container">
+    <p-image 
+        src="https://images.pexels.com/photos/4835419/pexels-photo-4835419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+        previewImageSrc="https://images.pexels.com/photos/4835419/pexels-photo-4835419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+        alt="Image" 
+        width="250" 
+        [preview]="true" />
+</div>
+
+<br><br>
+
+<div class="flex justify-content-center align-items" style="height: 50px;">
+    <button class="click" routerLink="/carrusel-imagenes">
+        <i class="pi pi-arrow-left"></i>
+    </button>
+</div>
