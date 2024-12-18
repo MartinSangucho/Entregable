@@ -19,87 +19,85 @@
   color: white; 
   font-size: 18px;
   font-weight: bold;
-  text-shadow: 2px 2px 4px #771c1c;
-  
-  }
+  text-shadow: 2px 2px 4px #000000;
+}
 
-  .click {
-    background-color: #007afd;
-    border: none; 
-    border-radius: 8px; 
-    font-size: 18px; 
-    padding: 12px 24px; 
-    color: white; 
-    font-weight: bold; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease;
-    margin-right: 25px;
-  }
+.click {
+  background-color: #000000;
+  border: none; 
+  border-radius: 8px; 
+  font-size: 18px; 
+  padding: 12px 24px; 
+  color: white; 
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+  margin-right: 25px;
+}
 
-  .click:hover {
-    background-color: #3e8bdd;
-    color: black;
-  }
+.click:hover {
+  background-color: #000000;
+  color: #000000; /* Color changed from black RGB */
+}
 
-  .click:focus {
-    outline: none; 
-  }
+.click:focus {
+  outline: none; 
+}
 
-  .click:active {
-    background-color: #002349;
-  }
+.click:active {
+  background-color: #000000;
+}
 
-  .click-1 {
-    background-color: #007bff; 
-    border: none; 
-    border-radius: 8px; 
-    font-size: 18px; 
-    padding: 12px 24px; 
-    color: white; 
-    font-weight: bold; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease;
-    margin-left: 2px;
-    margin-top: 12px;
-  }
+.click-1 {
+  background-color: #000000; 
+  border: none; 
+  border-radius: 8px; 
+  font-size: 18px; 
+  padding: 12px 24px; 
+  color: white; 
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+  margin-left: 2px;
+  margin-top: 12px;
+}
 
-  .click-1:hover {
-    background-color: #3e8bdd;
-    color: black;
-  }
+.click-1:hover {
+  background-color: #000000;
+  color: #000000; /* Color changed from black RGB */
+}
 
-  .click-1:focus {
-    outline: none; 
-  }
+.click-1:focus {
+  outline: none; 
+}
 
-  .click-1:active {
-    background-color: rgba(105, 102, 102, 0.301);
-  }
+.click-1:active {
+  background-color: #696666; /* RGB changed to hexadecimal */
+}
 
-  .click-2 {
-    background-color: #007bff; 
-    border: none; 
-    border-radius: 8px; 
-    font-size: 18px; 
-    padding: 12px 24px; 
-    color: white; 
-    font-weight: bold; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease;
-    margin-left:1068px;
-    margin-top: 12px;
-  }
+.click-2 {
+  background-color: #000000; 
+  border: none; 
+  border-radius: 8px; 
+  font-size: 18px; 
+  padding: 12px 24px; 
+  color: white; 
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+  margin-left:1068px;
+  margin-top: 12px;
+}
 
-  .click-2:hover {
-    background-color: #3e8bdd;
-    color: black;
-  }
+.click-2:hover {
+  background-color: #000000;
+  color: #000000; /* Color changed from black RGB */
+}
 
-  .click-2:focus {
-    outline: none; 
-  }
+.click-2:focus {
+  outline: none; 
+}
 
-  .click-2:active {
-    background-color: rgba(105, 102, 102, 0.301);
-  }
-  
+.click-2:active {
+  background-color: #000000; /* RGB changed to hexadecimal */
+}

@@ -1,24 +1,92 @@
+/* Estilos para el header y título */
 .header {
-    background-color: #007afd;
-    color: white;
-    padding: 2px;
-    text-align: center;
+  background-color: #fefbfb;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  // Centra el título verticalmente
 }
 
-header h1 {
-    font-size: 2.5rem;
-    animation: glowEffect 3s ease-in-out infinite;
-    text-shadow: 0 0 5px #b0bec5, 0 0 10px #90a4ae, 0 0 20px #90a4ae, 
-                 0 0 30px #78909c, 0 0 40px #78909c, 0 0 50px #607d8b;
+.titulo-matriz {
+  font-size: 2.5rem;
+  color: #000;
+  text-align: center; // Asegura que el texto del título esté centrado
+}
+
+/* Estilos para los botones */
+.btn-stylish {
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
 
-  @keyframes glowEffect {
-    0%, 100% {
-      text-shadow: 0 0 5px #b0bec5, 0 0 10px #90a4ae, 0 0 20px #90a4ae, 
-                   0 0 30px #78909c, 0 0 40px #78909c, 0 0 50px #607d8b;
-    }
-    50% {
-      text-shadow: 0 0 5px #cfd8dc, 0 0 10px #b0bec5, 0 0 20px #90a4ae, 
-                   0 0 30px #78909c, 0 0 40px #607d8b, 0 0 50px #546e7a;
-    }
+  &:active {
+    background-color: #9fd3a2;
+    transform: scale(0.98);
+  }
+
+  i {
+    margin-right: 8px;  // Añade espacio entre el ícono y el texto del botón
+  }
 }
+
+/* Estilo para los botones cuando son 'raised' */
+.p-button {
+  &.p-button-raised {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Flexbox y grid ajustados para una mejor distribución */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid p-2 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.grid p-2 .btn-stylish {
+  margin: 5px;
+}
+
+/* Aseguramos que los iconos dentro de los botones se alineen correctamente */
+.p-button i {
+  font-size: 1.2rem;
+}
+
+
+
+

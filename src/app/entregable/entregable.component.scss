@@ -1,3 +1,11 @@
+.titulo-matriz {
+  text-align: center; /* Centra el texto */
+  font-size: 24px; /* Tamaño de la fuente */
+  font-weight: bold; /* Hacer el texto negrita */
+  color: #000000; /* Color del texto */
+  margin-bottom: 20px; /* Espaciado debajo del título */
+  text-transform: uppercase; /* Convertir el texto a mayúsculas */
+}
 /* Estilo base */
 .responsive-menubar {
     display: flex;
@@ -43,7 +51,7 @@
 h2 {
     text-align: center;
     margin-top: 20px;
-    color: #007afd;
+    color: #000000;
 }
 
 .grid-5x5 {
